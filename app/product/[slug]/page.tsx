@@ -7,6 +7,7 @@ import { createSupabaseServerClient } from "@/lib/supabaseServer";
 import { formatARSFromCents } from "@/lib/currency";
 
 export const dynamic = "force-dynamic";
+export const runtime = "edge";
 
 type ProductImage = { id: string; url: string; sort_order: number | null };
 type ProductVariant = {
