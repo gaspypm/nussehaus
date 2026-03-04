@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+    color-scheme: light;
+    --bg: #f6f3ea;
+    --surface: rgba(255, 255, 255, 0.72);
+    --surface-strong: rgba(255, 255, 255, 0.92);
+    --text: #151515;
+    --muted: rgba(21, 21, 21, 0.55);
+    --line: rgba(21, 21, 21, 0.08);
+    --brand: #e0b05a;
+    --brand-ink: #2b1d07;
+    --shadow: 0 12px 35px rgba(15, 15, 15, 0.12);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: radial-gradient(1200px 800px at 20% 0%, rgba(224, 176, 90, 0.18), transparent 60%),
+        radial-gradient(900px 700px at 80% 10%, rgba(224, 176, 90, 0.10), transparent 55%),
+        var(--bg);
+    color: var(--text);
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: rgba(224, 176, 90, 0.28);
+}
+
+:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(224, 176, 90, 0.35);
+    border-radius: 12px;
+}
+
+a,
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+select,
+button {
+    font: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(21, 21, 21, 0.38);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 21, 21, 0.25) transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(21, 21, 21, 0.18);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgba(21, 21, 21, 0.26);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+}
