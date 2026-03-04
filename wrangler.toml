@@ -1,6 +1,8 @@
 name = "nussehaus"
 main = ".open-next/worker.js"
 compatibility_date = "2026-03-01"
+# enable Node compat (import Node APIs) — recomendado
+compatibility_flags = ["nodejs_compat"]
 
 [assets]
 directory = ".open-next/assets"
