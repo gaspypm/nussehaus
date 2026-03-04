@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createClient } from "@supabase/supabase-js";
 
-export const runtime = "edge";
 
 const CheckoutSchema = z.object({
     name: z.string().trim().min(2).max(80),

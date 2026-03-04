@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 const SITE_URL = "https://nussehaus.com";
 
 export async function GET() {

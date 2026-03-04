@@ -1,6 +1,11 @@
 {
+  "/(store)/about/page": "/about",
+  "/(store)/page": "/",
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
-  "/favicon.ico/route": "/favicon.ico",
-  "/page": "/"
+  "/api/checkout/route": "/api/checkout",
+  "/llms.txt/route": "/llms.txt",
+  "/product/[slug]/page": "/product/[slug]",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml"
 }
